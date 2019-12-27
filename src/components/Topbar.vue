@@ -9,7 +9,6 @@ export default {
   data() {
     return {
       text: ["Hi, 老赵其实不老, 是一枚前端攻城狮, 就这样. QQ群：320881312"],
-      timer: 0,
       translateX: 0,
       textWidth: 0
     };
@@ -25,8 +24,8 @@ export default {
   },
   methods: {
     loopScroll() {
-      this.translateX += 0.5;
-      this.timer = requestAnimationFrame(() => {
+      this.translateX += 1;
+      setTimeout(() => {
         if (this.translateX >= this.textWidth) {
           this.translateX = 0;
           this.$refs.text.style.transform = `translate(0, 0)`;
@@ -34,7 +33,7 @@ export default {
           this.$refs.text.style.transform = `translate(-${this.translateX}px, 0)`;
         }
         this.loopScroll();
-      });
+      }, 1000 / 24);
     }
   }
 };

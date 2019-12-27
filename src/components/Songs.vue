@@ -38,7 +38,7 @@ export default {
   z-index: 3;
   left: 20px;
   top: 80px;
-  width: 300px;
+  width: 400px;
   height: 700px;
   overflow-y: auto;
   overflow-x: hidden;
@@ -57,6 +57,10 @@ export default {
       &.playing {
         padding: 10px;
         background-color: rgba(255, 255, 255, 0.2);
+
+        .song {
+          color: #ffc107;
+        }
       }
 
       .index {

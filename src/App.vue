@@ -4,6 +4,7 @@
     <VideoBg />
     <Topbar />
     <Songs :songs="songs" />
+    <Lyrics :lyrics="lyrics" />
   </div>
 </template>
 
@@ -13,6 +14,7 @@ import Music163 from "./components/Music163";
 import VideoBg from "./components/VideoBg";
 import Topbar from "./components/Topbar";
 import Songs from "./components/Songs";
+import Lyrics from "./components/Lyrics";
 
 export default {
   data() {
@@ -42,7 +44,8 @@ export default {
     Music163,
     VideoBg,
     Topbar,
-    Songs
+    Songs,
+    Lyrics
   }
 };
 </script>
