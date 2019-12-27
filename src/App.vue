@@ -36,8 +36,13 @@ body,
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: "Kuaile";
+  src: url("./assets/Kuaile.ttf");
+}
+
 #app {
-  font-family: "Avenir", Helvetica, Arial, sans-serif;
+  font-family: "Kuaile", "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #fff;

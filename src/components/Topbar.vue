@@ -25,7 +25,7 @@ export default {
   },
   methods: {
     loopScroll() {
-      this.translateX += 1;
+      this.translateX += 0.5;
       this.timer = requestAnimationFrame(() => {
         if (this.translateX >= this.textWidth) {
           this.translateX = 0;
@@ -49,7 +49,7 @@ export default {
   right: 0;
   width: 100%;
   padding: 5px 0;
-  font-size: 24px;
+  font-size: 34px;
   overflow: hidden;
   color: #fff;
   background-color: rgba(0, 0, 0, 0.5);
