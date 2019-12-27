@@ -1,28 +1,46 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Music163 />
+    <VideoBg />
+    <Topbar />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Music163 from "./components/Music163";
+import VideoBg from "./components/VideoBg";
+import Topbar from "./components/Topbar";
 
 export default {
-  name: 'app',
+  data() {
+    return {};
+  },
   components: {
-    HelloWorld
+    Music163,
+    VideoBg,
+    Topbar
   }
-}
+};
 </script>
 
-<style>
+<style lang="scss">
+html,
+body,
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  height: 100%;
+}
+
+*,
+:after,
+:before {
+  box-sizing: border-box;
+}
+
+#app {
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  color: #fff;
+  overflow: hidden;
 }
 </style>
