@@ -9,7 +9,7 @@ export default {
   data() {
     return {
       text: ["Hi, 老赵其实不老, 是一枚前端攻城狮, 就这样. QQ群：320881312"],
-      timer: null,
+      timer: 0,
       translateX: 0,
       textWidth: 0
     };

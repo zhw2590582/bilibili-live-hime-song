@@ -23,8 +23,8 @@ export default {
   left: 0;
   top: 0;
   right: 0;
-  bottom: 0;
+  bottom: 45px;
   width: 100%;
-  height: 100%;
+  min-height: auto;
 }
 </style>

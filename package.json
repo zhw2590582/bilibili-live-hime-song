@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "core-js": "^3.4.3",
+    "dequal": "^1.0.0",
     "normalize.css": "^8.0.1",
     "vidage": "^0.5.1",
     "vue": "^2.6.10"
