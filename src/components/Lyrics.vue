@@ -18,9 +18,6 @@ export default {
       default: () => []
     }
   },
-  mounted() {
-    //
-  },
   updated() {
     const $playing = this.$refs.lyrics.querySelector(".playing");
     this.$refs.lyrics.scrollTo(0, $playing.offsetTop - 200);
