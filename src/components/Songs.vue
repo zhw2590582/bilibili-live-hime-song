@@ -26,7 +26,7 @@ export default {
   },
   updated() {
     const $playing = this.$refs.songs.querySelector(".playing");
-    this.$refs.songs.scrollTo(0, $playing.offsetTop - 80);
+    this.$refs.songs.scrollTo(0, $playing ? $playing.offsetTop - 80 : 0);
   }
 };
 </script>

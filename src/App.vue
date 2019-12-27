@@ -24,6 +24,27 @@ export default {
     };
   },
   mounted() {
+    const $frame = document.getElementById("iframe");
+    window.addEventListener("message", event => {
+      const { cmd, info } = event.data;
+      if (cmd === "DANMU_MSG") {
+        const macth = info[1].match(/\s*#\s*([^\s]+)(\s+(.+))*/i);
+        const type = macth[1];
+        const song = macth[2];
+
+        if (type === "切歌") {
+          $frame.contentWindow.postMessage({ type: "NEXT_SONG" }, "*");
+        }
+
+        if (type === "点歌" && song) {
+          $frame.contentWindow.postMessage(
+            { type: "ORDER_SONG", data: song },
+            "*"
+          );
+        }
+      }
+    });
+
     window.addEventListener("message", event => {
       const { type, data } = event.data;
       switch (type) {

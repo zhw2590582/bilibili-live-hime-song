@@ -20,13 +20,14 @@ export default {
   },
   updated() {
     const $playing = this.$refs.lyrics.querySelector(".playing");
-    this.$refs.lyrics.scrollTo(0, $playing.offsetTop - 200);
+    this.$refs.lyrics.scrollTo(0, $playing ? $playing.offsetTop - 200 : 0);
   }
 };
 </script>
 
 <style lang="scss">
 #lyrics {
+    display: none;
   position: fixed;
   z-index: 4;
   width: 500px;
