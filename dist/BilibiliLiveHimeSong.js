@@ -28,7 +28,7 @@
     }
   }
 
-  var css = "@font-face{font-family:Kuaile;src:url(https://zhw2590582.github.io/assets-cdn/fonts/kuaile.ttf)}.bilibili-song-hime{font-family:Kuaile,Avenir,Helvetica,Arial,sans-serif;position:fixed;z-index:9999;left:0;top:0;right:0;bottom:47px;width:100%;overflow:hidden;background:rgba(0,0,0,.9)}.bilibili-song-hime *,.bilibili-song-hime :after,.bilibili-song-hime :before{box-sizing:border-box}.bilibili-song-hime ::-webkit-scrollbar{display:block!important;width:1px!important}.bilibili-song-hime ::-webkit-scrollbar-thumb{background-color:#ddd!important}.bilibili-song-hime ::-webkit-scrollbar-thumb:hover{background-color:#fff!important}.bilibili-song-hime .bsh-top{position:absolute;z-index:2;left:0;top:0;right:0;width:100%;padding:5px 0;font-size:34px;overflow:hidden;color:#fff;background-color:rgba(0,0,0,.5)}.bilibili-song-hime .bsh-top .bsh-top-inner{display:inline-block;white-space:nowrap;line-height:1;text-shadow:0 1px 0 rgba(0,0,0,.8)}.bilibili-song-hime .bsh-lyrics,.bilibili-song-hime .bsh-top .bsh-top-inner{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.bilibili-song-hime .bsh-lyrics{display:-webkit-box;display:flex;-webkit-box-align:center;align-items:center;-webkit-box-pack:center;justify-content:center;position:absolute;z-index:3;width:100%;height:100%;left:0;top:0;right:0;bottom:0;padding:100px}.bilibili-song-hime .bsh-lyrics .bsh-lyrics-outer{width:100%;height:100%;overflow:hidden;scroll-behavior:smooth}.bilibili-song-hime .bsh-lyrics .bsh-lyrics-outer .bsh-lyrics-inner .bsh-lyrics-item{display:-webkit-box;display:flex;-webkit-box-align:center;align-items:center;-webkit-box-pack:center;justify-content:center;font-size:26px;white-space:nowrap;text-align:center;padding:10px 0;color:hsla(0,0%,100%,.5);text-shadow:0 1px 0 rgba(0,0,0,.5)}.bilibili-song-hime .bsh-lyrics .bsh-lyrics-outer .bsh-lyrics-inner .bsh-lyrics-item.bsh-lyrics-playing{-webkit-transition:all .3s ease;transition:all .3s ease;color:#ffc107;text-shadow:0 1px 10px rgba(255,229,0,.5)}.bilibili-song-hime .bsh-playlist{position:absolute;z-index:4;left:20px;top:0;width:400px;height:100%;padding:100px 0;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;pointer-events:none}.bilibili-song-hime .bsh-playlist .bsh-playlist-outer{width:100%;height:100%;overflow-y:auto;overflow-x:hidden;scroll-behavior:smooth;pointer-events:all}.bilibili-song-hime .bsh-playlist .bsh-playlist-outer .bsh-playlist-inner{background-color:rgba(0,0,0,.5)}.bilibili-song-hime .bsh-playlist .bsh-playlist-outer .bsh-playlist-inner .bsh-playlist-item{display:-webkit-box;display:flex;-webkit-box-align:center;align-items:center;padding:5px 10px;font-size:18px;white-space:nowrap}.bilibili-song-hime .bsh-playlist .bsh-playlist-outer .bsh-playlist-inner .bsh-playlist-item.bsh-playlist-playing{padding:10px;background-color:hsla(0,0%,100%,.2)}.bilibili-song-hime .bsh-playlist .bsh-playlist-outer .bsh-playlist-inner .bsh-playlist-item.bsh-playlist-playing .bsh-playlist-song{color:#ffc107}.bilibili-song-hime .bsh-playlist .bsh-playlist-outer .bsh-playlist-inner .bsh-playlist-item .bsh-playlist-index{color:#fff}.bilibili-song-hime .bsh-playlist .bsh-playlist-outer .bsh-playlist-inner .bsh-playlist-item .bsh-playlist-song{color:#03a9f4;margin-left:5px}.bilibili-song-hime .bsh-playlist .bsh-playlist-outer .bsh-playlist-inner .bsh-playlist-item .bsh-playlist-singer{color:#9a9a9a;margin-left:10px}";
+  var css = ".bilibili-song-hime{position:fixed;z-index:9999;left:0;top:0;right:0;bottom:47px;width:100%;overflow:hidden}.bilibili-song-hime *,.bilibili-song-hime :after,.bilibili-song-hime :before{box-sizing:border-box}.bilibili-song-hime ::-webkit-scrollbar{width:0!important}.bilibili-song-hime .bsh-top{position:absolute;z-index:2;left:0;top:0;right:0;width:100%;padding:5px 0;font-size:30px;overflow:hidden;color:#fff}.bilibili-song-hime .bsh-top .bsh-top-inner{display:inline-block;white-space:nowrap;line-height:1;text-shadow:0 1px 0 rgba(0,0,0,.8)}.bilibili-song-hime .bsh-lyrics,.bilibili-song-hime .bsh-top .bsh-top-inner{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.bilibili-song-hime .bsh-lyrics{display:-webkit-box;display:flex;-webkit-box-align:center;align-items:center;-webkit-box-pack:center;justify-content:center;position:absolute;z-index:3;width:100%;height:100%;left:0;top:0;right:0;bottom:0;padding:100px;pointer-events:none}.bilibili-song-hime .bsh-lyrics .bsh-lyrics-outer{width:100%;height:100%;overflow:hidden;scroll-behavior:smooth}.bilibili-song-hime .bsh-lyrics .bsh-lyrics-outer .bsh-lyrics-inner .bsh-lyrics-item{display:-webkit-box;display:flex;-webkit-box-align:center;align-items:center;-webkit-box-pack:center;justify-content:center;font-size:30px;white-space:nowrap;text-align:center;padding:15px 0;color:hsla(0,0%,100%,.8)}.bilibili-song-hime .bsh-lyrics .bsh-lyrics-outer .bsh-lyrics-inner .bsh-lyrics-item.bsh-lyrics-playing{-webkit-transition:all .3s ease;transition:all .3s ease;color:#ffc107;text-shadow:0 1px 10px rgba(255,229,0,.5)}.bilibili-song-hime .bsh-playlist{position:absolute;z-index:4;left:20px;top:0;width:400px;height:100%;padding:100px 0;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;pointer-events:none}.bilibili-song-hime .bsh-playlist .bsh-playlist-outer{width:100%;height:100%;overflow-y:auto;overflow-x:hidden;scroll-behavior:smooth;pointer-events:all}.bilibili-song-hime .bsh-playlist .bsh-playlist-outer .bsh-playlist-inner .bsh-playlist-item{display:-webkit-box;display:flex;-webkit-box-align:center;align-items:center;padding:5px 10px;font-size:18px;white-space:nowrap}.bilibili-song-hime .bsh-playlist .bsh-playlist-outer .bsh-playlist-inner .bsh-playlist-item.bsh-playlist-playing{background-image:-webkit-gradient(linear,left top,right top,from(hsla(0,0%,100%,.25)),to(hsla(0,0%,100%,0)));background-image:linear-gradient(90deg,hsla(0,0%,100%,.25),hsla(0,0%,100%,0))}.bilibili-song-hime .bsh-playlist .bsh-playlist-outer .bsh-playlist-inner .bsh-playlist-item.bsh-playlist-playing .bsh-playlist-song{color:#ffc107;text-shadow:0 1px 10px rgba(255,229,0,.5)}.bilibili-song-hime .bsh-playlist .bsh-playlist-outer .bsh-playlist-inner .bsh-playlist-item .bsh-playlist-index{color:#fff}.bilibili-song-hime .bsh-playlist .bsh-playlist-outer .bsh-playlist-inner .bsh-playlist-item .bsh-playlist-song{color:#03a9f4;margin-left:5px}.bilibili-song-hime .bsh-playlist .bsh-playlist-outer .bsh-playlist-inner .bsh-playlist-item .bsh-playlist-singer{color:hsla(0,0%,100%,.5);margin-left:10px}";
   styleInject(css);
 
   var css$1 = ".vidage:after,.vidage:before{position:absolute;top:0;right:0;bottom:0;left:0}.vidage-ready .vidage:before{display:none}.vidage-ready .vidage-video{display:block}.vidage{position:fixed;top:0;right:0;bottom:47px;left:0;min-width:100%;z-index:-1}.vidage:before{content:\"\";background-position:50%;background-repeat:no-repeat;background-size:cover}.vidage:after{content:\"\"}.vidage-video{position:absolute;top:0;left:0;width:100%;height:100%;-o-object-fit:cover;object-fit:cover;display:none;pointer-events:none}@supports not ((-o-object-fit:cover) or (object-fit:cover)){.vidage-video{top:50%;left:50%;-webkit-transform:translateX(-50%) translateY(-50%);transform:translateX(-50%) translateY(-50%)}}";
@@ -89,6 +89,7 @@
       inner.innerHTML = lyrics.map(function (item) {
         return "<div data-time=\"".concat(item.time, "\" class=\"bsh-lyrics-item ").concat(item.playing ? 'bsh-lyrics-playing' : '', "\">").concat(item.text, "</div>");
       }).join('');
+      outer.scrollTo(0, 0);
     }
 
     if (!dequal(lyrics, lastLyrics)) {
@@ -142,7 +143,7 @@
   }
 
   var config = {
-    topbar: '老赵其实不老, 是一枚前端攻城狮',
+    topbar: '本直播间使用本人开发的 Chrome 扩展 <Bilibili 直播姬> 进行直播，简介有下载地址。24小时无人值守，欢迎随意点歌和切歌，送个礼物什么的那就最好啦。',
     videoBg: 'https://zhw2590582.github.io/assets-cdn/video/shinobu-kocho.mp4'
   };
 
@@ -181,34 +182,49 @@
 
   var music163 = 'https://music.163.com/#/search/m/?s=';
 
-  if (window.location.href !== music163) {
-    window.location.href = music163;
+  if (window.location.href.startsWith(music163)) {
+    window.addEventListener('load', function () {
+      var $container = document.createElement('div');
+      $container.classList.add('bilibili-song-hime');
+      document.body.appendChild($container);
+      $container.innerHTML = "\n            <div class=\"vidage\">\n                <video id=\"vidage\" class=\"vidage-video\" preload=\"metadata\" loop autoplay muted>\n                    <source src=\"".concat(config.videoBg, "\" type=\"video/mp4\" />\n                </video>\n            </div>\n            <div class=\"bsh-top\">\n                <div class=\"bsh-top-inner\"></div>\n            </div>\n            <div class=\"bsh-lyrics\">\n                <div class=\"bsh-lyrics-outer\">\n                    <div class=\"bsh-lyrics-inner\"></div>\n                </div>\n            </div>\n            <div class=\"bsh-playlist\">\n                <div class=\"bsh-playlist-outer\">\n                    <div class=\"bsh-playlist-inner\"></div>\n                </div>\n            </div>\n        ");
+      var $topbar = $container.querySelector('.bsh-top-inner');
+      var $vidage = $container.querySelector('.vidage');
+      var $video = $container.querySelector('#vidage');
+      var $lyricsOuter = $container.querySelector('.bsh-lyrics-outer');
+      var $lyricsInner = $container.querySelector('.bsh-lyrics-inner');
+      var $playlistOuter = $container.querySelector('.bsh-playlist-outer');
+      var $playlistInner = $container.querySelector('.bsh-playlist-inner');
+      new vidage('#vidage');
+      topbar($topbar, config.topbar);
+      $vidage.addEventListener('dragover', function (event) {
+        return event.preventDefault();
+      });
+      $vidage.addEventListener('drop', function (event) {
+        event.preventDefault();
+        var file = event.dataTransfer.files[0];
+
+        if (file) {
+          var canPlayType = $video.canPlayType(file.type);
+
+          if (canPlayType === 'maybe' || canPlayType === 'probably') {
+            $video.src = URL.createObjectURL(file);
+          }
+        }
+      });
+      setInterval(function () {
+        var $listBtn = document.querySelector('[title="播放列表"]');
+        var $list = document.querySelector('#g_playlist');
+
+        if (!$list && $listBtn) {
+          $listBtn.click();
+        } else {
+          playlist($playlistOuter, $playlistInner, getPlaylist(), getSongId());
+          lyrics($lyricsOuter, $lyricsInner, getLyrics(), getSongId());
+        }
+      }, 500);
+    });
   }
-
-  window.addEventListener('load', function () {
-    var $container = document.createElement('div');
-    $container.classList.add('bilibili-song-hime');
-    document.body.appendChild($container);
-    $container.innerHTML = "\n        <div class=\"vidage\">\n            <video id=\"vidage\" class=\"vidage-video\" preload=\"metadata\" loop autoplay muted>\n                <source src=\"".concat(config.videoBg, "\" type=\"video/mp4\" />\n            </video>\n        </div>\n        <div class=\"bsh-top\">\n            <div class=\"bsh-top-inner\"></div>\n        </div>\n        <div class=\"bsh-lyrics\">\n            <div class=\"bsh-lyrics-outer\">\n                <div class=\"bsh-lyrics-inner\"></div>\n            </div>\n        </div>\n        <div class=\"bsh-playlist\">\n            <div class=\"bsh-playlist-outer\">\n                <div class=\"bsh-playlist-inner\"></div>\n            </div>\n        </div>\n    ");
-    var $topbar = $container.querySelector('.bsh-top-inner');
-    var $lyricsOuter = $container.querySelector('.bsh-lyrics-outer');
-    var $lyricsInner = $container.querySelector('.bsh-lyrics-inner');
-    var $playlistOuter = $container.querySelector('.bsh-playlist-outer');
-    var $playlistInner = $container.querySelector('.bsh-playlist-inner');
-    new vidage('#vidage');
-    topbar($topbar, config.topbar);
-    setInterval(function () {
-      var $listBtn = document.querySelector('[title="播放列表"]');
-      var $list = document.querySelector('#g_playlist');
-
-      if (!$list && $listBtn) {
-        $listBtn.click();
-      } else {
-        playlist($playlistOuter, $playlistInner, getPlaylist(), getSongId());
-        lyrics($lyricsOuter, $lyricsInner, getLyrics(), getSongId());
-      }
-    }, 500);
-  });
 
 }());
 //# sourceMappingURL=BilibiliLiveHimeSong.js.map

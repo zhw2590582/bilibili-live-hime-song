@@ -1,10 +1,4 @@
-@font-face {
-    font-family: 'Kuaile';
-    src: url('https://zhw2590582.github.io/assets-cdn/fonts/kuaile.ttf');
-}
-
 .bilibili-song-hime {
-    font-family: 'Kuaile', 'Avenir', Helvetica, Arial, sans-serif;
     position: fixed;
     z-index: 9999;
     left: 0;
@@ -13,7 +7,6 @@
     bottom: 47px;
     width: 100%;
     overflow: hidden;
-    background: rgba(0, 0, 0, 0.9);
 
     *,
     :after,
@@ -22,16 +15,7 @@
     }
 
     ::-webkit-scrollbar {
-        display: block !important;
-        width: 1px !important;
-    }
-
-    ::-webkit-scrollbar-thumb {
-        background-color: #ddd !important;
-    }
-
-    ::-webkit-scrollbar-thumb:hover {
-        background-color: #fff !important;
+        width: 0 !important;
     }
 
     .bsh-top {
@@ -42,10 +26,9 @@
         right: 0;
         width: 100%;
         padding: 5px 0;
-        font-size: 34px;
+        font-size: 30px;
         overflow: hidden;
         color: #fff;
-        background-color: rgba(0, 0, 0, 0.5);
 
         .bsh-top-inner {
             display: inline-block;
@@ -70,6 +53,7 @@
         bottom: 0;
         padding: 100px;
         user-select: none;
+        pointer-events: none;
 
         .bsh-lyrics-outer {
             width: 100%;
@@ -83,12 +67,11 @@
                     align-items: center;
                     justify-content: center;
                     padding: 5px 10px;
-                    font-size: 26px;
+                    font-size: 30px;
                     white-space: nowrap;
                     text-align: center;
-                    padding: 10px 0;
-                    color: rgba(255, 255, 255, 0.5);
-                    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
+                    padding: 15px 0;
+                    color: rgba(255, 255, 255, 0.8);
 
                     &.bsh-lyrics-playing {
                         transition: all 0.3s ease;
@@ -120,8 +103,6 @@
             pointer-events: all;
 
             .bsh-playlist-inner {
-                background-color: rgba(0, 0, 0, 0.5);
-
                 .bsh-playlist-item {
                     display: flex;
                     align-items: center;
@@ -130,11 +111,10 @@
                     white-space: nowrap;
 
                     &.bsh-playlist-playing {
-                        padding: 10px;
-                        background-color: rgba(255, 255, 255, 0.2);
-
+                        background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0));
                         .bsh-playlist-song {
                             color: #ffc107;
+                            text-shadow: 0px 1px 10px rgba(255, 229, 0, 0.5);
                         }
                     }
 
@@ -148,7 +128,7 @@
                     }
 
                     .bsh-playlist-singer {
-                        color: #9a9a9a;
+                        color: rgba(255, 255, 255, 0.5);
                         margin-left: 10px;
                     }
                 }

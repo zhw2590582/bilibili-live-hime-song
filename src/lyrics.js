@@ -13,6 +13,7 @@ export default function(outer, inner, lyrics, id) {
                     }">${item.text}</div>`,
             )
             .join('');
+        outer.scrollTo(0, 0);
     }
 
     if (!dequal(lyrics, lastLyrics)) {
