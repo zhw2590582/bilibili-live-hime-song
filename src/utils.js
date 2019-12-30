@@ -21,7 +21,7 @@ export function getLyrics() {
         return {
             playing: item.classList.contains('z-sel'),
             time: item.dataset.time,
-            text: item.innerText.trim(),
+            text: item.innerHTML.trim(),
         };
     });
 }
