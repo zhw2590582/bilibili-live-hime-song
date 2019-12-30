@@ -15,7 +15,6 @@ export default function(outer, inner, playlist, id) {
                     </div>`,
             )
             .join('');
-        outer.scrollTo(0, 0);
     }
 
     if (!dequal(playlist, lastPlaylist)) {

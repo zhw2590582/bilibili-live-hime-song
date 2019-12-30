@@ -120,7 +120,6 @@
       inner.innerHTML = playlist.map(function (item, index) {
         return "<div data-id=\"".concat(item.id, "\" class=\"bsh-playlist-item ").concat(item.playing ? 'bsh-playlist-playing' : '', "\">\n                        <span class=\"bsh-playlist-index\">").concat(index + 1, ".</span>\n                        <span class=\"bsh-playlist-song\">").concat(item.song, "</span>\n                        <span class=\"bsh-playlist-singer\">").concat(item.singer, "</span>\n                    </div>");
       }).join('');
-      outer.scrollTo(0, 0);
     }
 
     if (!dequal(playlist, lastPlaylist)) {
