@@ -18,7 +18,6 @@ export default {
 
 <style lang="scss">
 .vidage {
-  display: none;
   position: fixed;
   z-index: 2;
   left: 0;

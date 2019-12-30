@@ -27,7 +27,6 @@ export default {
 
 <style lang="scss">
 #lyrics {
-    display: none;
   position: fixed;
   z-index: 4;
   width: 500px;
