@@ -1,0 +1,25 @@
+{
+    "name": "Bilibili 点歌姬",
+    "version": "1.0.0",
+    "description": "Bilibili 点歌姬",
+    "manifest_version": 2,
+    "background": {
+        "scripts": [
+            "hot-reload.js"
+        ]
+    },
+    "permissions": [
+        "*://music.163.com/*"
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "*://music.163.com/*"
+            ],
+            "js": [
+                "BilibiliLiveHimeSong.js"
+            ]
+        }
+    ],
+    "content_security_policy": "script-src 'self'; object-src 'self'"
+}

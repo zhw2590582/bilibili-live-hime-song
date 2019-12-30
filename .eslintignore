@@ -1,0 +1,4 @@
+/dist
+/node_modules
+/rollup-config.js
+/src/*.scss
