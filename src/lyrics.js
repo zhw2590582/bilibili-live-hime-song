@@ -3,7 +3,7 @@ import dequal from 'dequal';
 let lastId = -1;
 let lastLyrics = [];
 export default function(outer, inner, lyrics, id) {
-    if (!dequal(id, lastId)) {
+    if (!dequal(id, lastId) || lyrics.length !== lastLyrics.length) {
         lastId = id;
         inner.innerHTML = lyrics
             .map(

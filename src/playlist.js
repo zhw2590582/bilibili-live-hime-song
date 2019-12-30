@@ -3,7 +3,7 @@ import dequal from 'dequal';
 let lastId = -1;
 let lastPlaylist = [];
 export default function(outer, inner, playlist, id) {
-    if (!dequal(id, lastId)) {
+    if (!dequal(id, lastId) || playlist.length !== lastPlaylist.length) {
         lastId = id;
         inner.innerHTML = playlist
             .map(
@@ -15,6 +15,7 @@ export default function(outer, inner, playlist, id) {
                     </div>`,
             )
             .join('');
+        outer.scrollTo(0, 0);
     }
 
     if (!dequal(playlist, lastPlaylist)) {

@@ -26,9 +26,17 @@ export function getLyrics() {
     });
 }
 
-export function getSongId() {
+export function getPlayingSong() {
     const $list = document.querySelector('#g_playlist');
-    if (!$list) return -1;
+    if (!$list) return {};
     const $sel = $list.querySelector('.f-cb .z-sel');
-    return $sel ? Number($sel.dataset.id) : -1;
+    return $sel
+        ? {
+              id: Number($sel.dataset.id),
+              playing: $sel.classList.contains('z-sel'),
+              song: $sel.children[1].innerText.trim(),
+              singer: $sel.children[3].innerText,
+              duration: $sel.children[4].innerText,
+          }
+        : {};
 }
