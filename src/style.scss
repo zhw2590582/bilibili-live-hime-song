@@ -1,0 +1,158 @@
+@font-face {
+    font-family: 'Kuaile';
+    src: url('https://zhw2590582.github.io/assets-cdn/fonts/kuaile.ttf');
+}
+
+.bilibili-song-hime {
+    font-family: 'Kuaile', 'Avenir', Helvetica, Arial, sans-serif;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 47px;
+    width: 100%;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.9);
+
+    *,
+    :after,
+    :before {
+        box-sizing: border-box;
+    }
+
+    ::-webkit-scrollbar {
+        display: block !important;
+        width: 1px !important;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background-color: #ddd !important;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        background-color: #fff !important;
+    }
+
+    .bsh-top {
+        position: absolute;
+        z-index: 2;
+        left: 0;
+        top: 0;
+        right: 0;
+        width: 100%;
+        padding: 5px 0;
+        font-size: 34px;
+        overflow: hidden;
+        color: #fff;
+        background-color: rgba(0, 0, 0, 0.5);
+
+        .bsh-top-inner {
+            display: inline-block;
+            white-space: nowrap;
+            user-select: none;
+            line-height: 1;
+            text-shadow: 0 1px 0 rgba(0, 0, 0, 0.8);
+        }
+    }
+
+    .bsh-lyrics {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        z-index: 3;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        padding: 100px;
+        user-select: none;
+
+        .bsh-lyrics-outer {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            scroll-behavior: smooth;
+
+            .bsh-lyrics-inner {
+                .bsh-lyrics-item {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 5px 10px;
+                    font-size: 26px;
+                    white-space: nowrap;
+                    text-align: center;
+                    padding: 10px 0;
+                    color: rgba(255, 255, 255, 0.5);
+                    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
+
+                    &.bsh-lyrics-playing {
+                        transition: all 0.3s ease;
+                        color: #ffc107;
+                        text-shadow: 0px 1px 10px rgba(255, 229, 0, 0.5);
+                    }
+                }
+            }
+        }
+    }
+
+    .bsh-playlist {
+        position: absolute;
+        z-index: 4;
+        left: 20px;
+        top: 0;
+        width: 400px;
+        height: 100%;
+        padding: 100px 0;
+        user-select: none;
+        pointer-events: none;
+
+        .bsh-playlist-outer {
+            width: 100%;
+            height: 100%;
+            overflow-y: auto;
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+            pointer-events: all;
+
+            .bsh-playlist-inner {
+                background-color: rgba(0, 0, 0, 0.5);
+
+                .bsh-playlist-item {
+                    display: flex;
+                    align-items: center;
+                    padding: 5px 10px;
+                    font-size: 18px;
+                    white-space: nowrap;
+
+                    &.bsh-playlist-playing {
+                        padding: 10px;
+                        background-color: rgba(255, 255, 255, 0.2);
+
+                        .bsh-playlist-song {
+                            color: #ffc107;
+                        }
+                    }
+
+                    .bsh-playlist-index {
+                        color: #fff;
+                    }
+
+                    .bsh-playlist-song {
+                        color: #03a9f4;
+                        margin-left: 5px;
+                    }
+
+                    .bsh-playlist-singer {
+                        color: #9a9a9a;
+                        margin-left: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
