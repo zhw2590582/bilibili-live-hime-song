@@ -5,9 +5,11 @@
     "manifest_version": 2,
     "background": {
         "scripts": [
+            "background.js",
             "hot-reload.js"
         ]
     },
+    "browser_action": {},
     "permissions": [
         "*://music.163.com/*"
     ],
