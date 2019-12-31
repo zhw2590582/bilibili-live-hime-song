@@ -33,8 +33,8 @@ if (window.location.href.startsWith(music163)) {
                 </div>
             </div>
             <div class="bsh-info">
-                <div>切换歌曲：#切歌</div>
-                <div>点播歌曲：#点歌 + 空格 + 歌名</div>
+                <div>#切歌</div>
+                <div>#点歌 + 空格 + 歌名</div>
             </div>
             <div class="bsh-notices"></div>
         `;
@@ -112,16 +112,20 @@ if (window.location.href.startsWith(music163)) {
                     setTimeout(() => {
                         const $add = $iframe.querySelector('[title="添加到播放列表"');
                         if ($add) {
-                            $add.click();
-                            setTimeout(() => {
-                                if (document.querySelector('.m-vipguide-modal')) {
-                                    document.querySelector('.m-vipcashier-title-close').click();
-                                    notice(`${uname} 点歌失败：版权歌曲`);
-                                } else {
-                                    const last = getPlaylist().pop();
-                                    notice(`${uname} 点歌成功：${last.singer} -《${last.song}》`);
-                                }
-                            }, 500);
+                            if (getPlaylist().find(item => item.id === Number($add.dataset.resId))) {
+                                notice(`${uname} 点歌失败：歌曲已存在`);
+                            } else {
+                                $add.click();
+                                setTimeout(() => {
+                                    if (document.querySelector('.m-vipguide-modal')) {
+                                        document.querySelector('.m-vipcashier-title-close').click();
+                                        notice(`${uname} 点歌失败：版权歌曲`);
+                                    } else {
+                                        const last = getPlaylist().pop();
+                                        notice(`${uname} 点歌成功：${last.singer} -《${last.song}》`);
+                                    }
+                                }, 1000);
+                            }
                         } else {
                             notice(`${uname} 点歌失败：未找到歌曲`);
                         }

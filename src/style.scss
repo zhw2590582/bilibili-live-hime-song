@@ -47,14 +47,11 @@
         position: absolute;
         z-index: 3;
         width: 100%;
-        height: 100%;
+        height: 300px;
         left: 0;
-        top: 0;
         right: 0;
-        bottom: 0;
-        padding: 100px;
+        bottom: 50px;
         user-select: none;
-        pointer-events: none;
 
         .bsh-lyrics-outer {
             width: 100%;
@@ -68,11 +65,11 @@
                     align-items: center;
                     justify-content: center;
                     padding: 5px 10px;
-                    font-size: 34px;
+                    font-size: 30px;
                     white-space: nowrap;
                     text-align: center;
                     padding: 15px 0;
-                    color: rgba(255, 255, 255, 0.8);
+                    color: rgba(255, 255, 255, 0.5);
 
                     &.bsh-lyrics-playing {
                         transition: all 0.3s ease;
@@ -139,20 +136,20 @@
 
     .bsh-info {
         position: absolute;
-        right: 50px;
+        right: 20px;
         top: 100px;
-        width: 350px;
-        font-size: 20px;
+        width: 280px;
+        font-size: 22px;
         color: #ffc107;
         text-shadow: 0px 1px 10px rgba(255, 229, 0, 0.5);
     }
 
     .bsh-notices {
         position: absolute;
-        right: 50px;
-        top: 200px;
-        width: 350px;
-        font-size: 16px;
+        right: 20px;
+        top: 180px;
+        width: 280px;
+        font-size: 14px;
         color: #fff;
 
         .bsh-notice-item {

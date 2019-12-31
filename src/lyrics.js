@@ -27,7 +27,7 @@ export default function(outer, inner, lyrics, id) {
         const $newPlaying = inner.querySelector(`[data-time="${playing.time}"]`);
         if (playing && $newPlaying) {
             $newPlaying.classList.add('bsh-lyrics-playing');
-            outer.scrollTo(0, $newPlaying ? $newPlaying.offsetTop - 100 - outer.clientHeight / 2 : 0);
+            outer.scrollTo(0, $newPlaying ? $newPlaying.offsetTop - outer.clientHeight / 2 : 0);
         }
     }
 }
